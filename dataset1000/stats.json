@@ -1,0 +1,17 @@
+{
+  "total_sgf_files": 61149,
+  "valid_sgf_files": 0,
+  "processed_games": 0,
+  "total_positions": 29884,
+  "positions_by_category": {
+    "standard": 9934,
+    "strong": 9958,
+    "elite": 9992
+  },
+  "games_by_category": {
+    "standard": 2704,
+    "strong": 3397,
+    "elite": 55048
+  },
+  "processing_time": 14.901111
+}

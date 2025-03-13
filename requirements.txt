@@ -1,0 +1,27 @@
+# Core Python Libraries
+numpy>=1.19.0
+torch>=1.7.0
+tqdm>=4.50.0
+papaparse>=0.8.0
+
+# Data Processing
+pandas>=1.2.0
+unicodedata2>=15.0.0  # For Unicode normalization
+
+# Optional: Additional scientific computing and data manipulation
+scipy>=1.6.0
+scikit-learn>=0.24.0
+
+# Development and Testing Tools
+pytest>=6.2.0  # For unit testing
+black>=21.5b1  # Code formatting
+flake8>=3.9.0  # Linting
+
+# Logging and Debugging
+logging>=0.5.1.2  # Standard Python logging
+
+# Type Checking (optional)
+mypy>=0.812  # Static type checking
+
+# System and File Handling
+pathlib>=1.0.1
