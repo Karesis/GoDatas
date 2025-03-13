@@ -4,6 +4,36 @@
 
 在人工智能和机器学习快速发展的今天，高质量的训练数据集对于深度学习模型的性能至关重要。围棋作为一种极其复杂的策略性博弈游戏，其数据集的构建尤其具有挑战性。本项目旨在从海量而杂乱不堪的的SGF（Smart Game Format）文件中，精心构建一个高质量、结构化的围棋对局数据集，为深度学习研究提供坚实的基础。
 
+### 中文版添加内容
+
+在"项目背景"部分之后添加：
+
+```markdown
+## Hugging Face 数据集
+
+本数据集现已在 Hugging Face Datasets Hub 上发布：
+
+🤗 **数据集链接**：https://huggingface.co/datasets/Karesis/GoDatas
+
+### 使用 Hugging Face Datasets 加载
+
+您可以使用 Hugging Face 的 `datasets` 库轻松加载此数据集：
+
+```python
+from datasets import load_dataset
+
+# 加载数据集
+dataset = load_dataset("Karesis/GoDatas")
+
+# 访问特定分割
+train_data = dataset["train"]
+val_data = dataset["validation"]
+test_data = dataset["test"]
+
+# 示例：获取棋盘状态及其对应的着法
+board = train_data[0]["board_state"]
+move = train_data[0]["move"]
+
 ## 数据源
 
 基础数据来源：https://homepages.cwi.nl/~aeb/go/games

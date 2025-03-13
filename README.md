@@ -4,6 +4,31 @@
 
 In the era of rapid advancement in artificial intelligence and machine learning, high-quality training datasets are crucial for the performance of deep learning models. Go, as an extremely complex strategic board game, presents unique challenges in dataset construction. This project meticulously builds a high-quality, structured Go game dataset from massive and chaotic SGF (Smart Game Format) files, providing a solid foundation for deep learning research.
 
+## Hugging Face Dataset
+
+This dataset is now available on Hugging Face Datasets Hub:
+
+🤗 **Dataset Link**: https://huggingface.co/datasets/Karesis/GoDatas
+
+### Loading with Hugging Face Datasets
+
+You can easily load this dataset using the Hugging Face `datasets` library:
+
+```python
+from datasets import load_dataset
+
+# Load the dataset
+dataset = load_dataset("Karesis/GoDatas")
+
+# Access specific splits
+train_data = dataset["train"]
+val_data = dataset["validation"]
+test_data = dataset["test"]
+
+# Example: Get a board state and its corresponding move
+board = train_data[0]["board_state"]
+move = train_data[0]["move"]
+
 ### Data Source
 Base dataset sourced from: https://homepages.cwi.nl/~aeb/go/games
 
