@@ -230,7 +230,7 @@ train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=64, shuffle
 
 ## 许可
 
-MIT
+Apache 2.0
 
 ## 贡献与反馈
 
